@@ -1,0 +1,24 @@
+CREATE DATABASE IF NOT EXISTS villamar;
+USE villamar;
+
+CREATE TABLE IF NOT EXISTS registro (
+    id INT(11) AUTO_INCREMENT PRIMARY KEY,
+    nombre VARCHAR(50),
+    apellido VARCHAR(50),
+    telefono VARCHAR(8)
+);
+
+CREATE TABLE IF NOT EXISTS residente (
+    codResidente INT(11) AUTO_INCREMENT PRIMARY KEY,
+    codCondominio INT(11),
+    nombre VARCHAR(45),
+    apellidoPaterno VARCHAR(45),
+    apellidoMaterno VARCHAR(45),
+    email VARCHAR(100),
+    dniResidente VARCHAR(9),
+    telefono VARCHAR(9),
+    fechaCuota DATE,
+    cuota DOUBLE
+);
+
+
